@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="signup-box">
+        <h1>Sign Up</h1>
+        <h2>Your basic info</h2>
+        <form>
+          <label>Name:</label>
+          <input type="text" name="user" id="user" required />
+          <label>Email:</label>
+          <input type="email" name="email" id="email" required />
+          <label>Password:</label>
+          <input type="password" name="pass" id="pass" required />
+        <div>
+            <label for="">Age: </label>
+            <input type="radio" name="age" id="under_18" value="Under 18" checked> Under 18 
+            <input type="radio" name="age" id="18_or_older" value="18 or older"> 18 or older 
+        </div>
+
+        <div>
+        <h3>Your profile</h3>
+            <label for="biography">Biography : </label>
+            <input type="text" name="bio" id="bio"/>
+        </div>
+            <label for="job role"> Choose a job:</label>
+            <select name="Jobs" id="Jobs">
+                <optgroup label="Web" style="color: #8e9ba4; font-size: 16px;">
+                <option value="front-end Developer">Front-End Developer</option>
+                <option value="php-developer">PHP Developer</option>
+                <option value="python-developer">Python Developer</option>
+                <option value="rails-developer">Rails Developer</option>
+                <option value="web-developer">Web Developer</option>
+                <option value="wordpress-developer">WordPress Developer</option>
+            </optgroup>
+                <optgroup label="Mobile" style="color: #8e9ba4; font-size: 16px;">
+                <option value="android-developer">Android Developer</option>
+                <option value="ios-developer">iOS Developer</option>
+                <option value="mobile-developer">Mobile Developer</option>
+            </optgroup>
+                <optgroup label="Business" style="color: #8e9ba4; font-size: 16px;">
+                  <option value="business-owner">Business Owner</option>
+                  <option value="freelancer">Freelancer</option>  
+            </optgroup>
+            <optgroup label="Other" style="color: #8e9ba4; font-size: 16px;">
+                <option value="secretary">Secretary</option>
+                <option value="maintenance">Maintenance</option>
+            </optgroup>
+
+        </select>
+        <div style="text-align: center;">
+            <button type="submit">Sign Up</button>
+        </div>
+        </form>
+    </body>
+  </html>

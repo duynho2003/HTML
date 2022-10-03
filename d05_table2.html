@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+        }
+        h2{
+            color: aquamarine;
+
+        }
+
+        caption{
+            font-weight: bolder;
+            color: red
+        }
+
+        table{
+            padding: 10px;
+            border: solid thin grey;
+            box-shadow: 3px 3px 3px gainsboro;
+        }
+
+        th, td{
+            border: solid thin burlywood;
+            padding: 5px 20px 5px 20px;
+        }
+
+        th{
+            background-color: skyblue;
+            color: whitesmoke;
+
+        }
+        td:first-child,
+        td:nth-child(4){
+          text-align: center;
+        }
+        tr:nth-child(odd){
+            background-color: aliceblue;
+        }
+
+        tr:hover{
+            background-color: mediumaquamarine;
+            color:mintcream;
+        }
+
+        tr:last-child>td{
+            text-align: right;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h2>Danh sach sinh vien <small>- version 2</small> </h2>
+    <hr>
+    <table>
+        <caption>Class: T1.2208.A0</caption>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>email</th>
+            <th>birth</th>
+        </tr>
+        <tr>
+            <td>SV01</td>
+            <td>Le Thi Hoa Dang</td>
+            <td>dangle@gmail.com</td>
+            <td rowspan="2">2003</td>
+        </tr>
+        <tr>
+            <td>SV02</td>
+            <td>Nguyen Anh Duy</td>
+            <td>duynguyen@gmail.com</td>
+        </tr>
+        <tr>
+            <td>SV03</td>
+            <td>Le Tan Kha</td>
+            <td>khale@gmail.com</td>
+            <td rowspan="4">2004</td>
+        </tr>
+        <tr>
+            <td>SV04</td>
+            <td>Co Trinh Hien Tai</td>
+            <td>taico@gmail.com</td>
+        </tr>
+        <tr>
+            <td>SV05</td>
+            <td>Vo Quang Trung</td>
+            <td>trungvo@gmail.com</td>
+        </tr>
+        <tr>
+            <td>SV06</td>
+            <td>Vo Van Suong</td>
+            <td>suongvo@gmail.com</td>
+        </tr>
+        <tr>
+            <td colspan="4"> Tong so sinh vien : 6</td>
+        </tr>
+    </table>
+</body>
+</html>
