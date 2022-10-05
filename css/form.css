@@ -1,5 +1,9 @@
-form{
+*{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form{
+
     font-size: 1.1rem;
 
     padding: 30px 40px;
@@ -18,14 +22,13 @@ label{
     width: 100px;
 }
 
-input[type=text], input[type=password], input[type=email], input[type=date], textarea, select
+input[type=text], input[type=password], input[type=email], 
+input[type=date], textarea,
+select
 {
     font-size: 1.1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 200px;
-    border: none;
-    border-bottom: medium solid salmon;
-    border-right: thin solid lightpink;
 }
 
 input:required:invalid{
@@ -33,16 +36,16 @@ input:required:invalid{
 }
 
 input:required:valid{
-    background-color: lightskyblue;
+    background-color: lightcyan;
 }
 
-button{
+button, input[type=button]{
     padding: 8px 30px;
     color: antiquewhite;
     font-weight: bold;
     border: solid thin wheat;
     border-radius: 10px;
-    background-color: lightblue;
+    background-color: blue;
 }
 
 button[type=reset]{

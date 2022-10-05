@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript demo</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <h2>Javascript - alert(), confirm(), prompt() and isNaN() demo</h2>
+    <hr>
+    <form action>
+        <input type="button" value="click me" onclick="alert(`Don't touch ME!`)">
+
+        <input type="button" value="hit me -confirm()" id="btHit">
+
+        <input type="button" value="input something -prompt()" id="btinput">
+    </form>
+    <script>
+        //lap trinh cho su kien cick vo cai button [Hit me]
+        document.getElementById('btHit').onclick= function(){
+            var kq = confirm("Do you want to close your window ???");
+
+            console.log(kq); // in gia tri cua bien kq ra man hinh
+            if(kq==true){
+                window.close(); // dong cua so trong browser
+            }
+        }
+        
+        //lap trinh cho input
+        document.getElementById(`btinput`).onclick= function(){
+            var kq = prompt('enter your year of birth : ', 2004);
+            console.log(`chuoi nhap : ${kq}`);
+
+            if(isNaN(kq)){
+                alert(" Wrong Date ! Try again !");
+            }
+            else{
+            var age = 2022 - kq;
+            alert("You are " + age + " year-old.");    
+            }   
+        }
+    </script>
+</body>
+
+</html>
