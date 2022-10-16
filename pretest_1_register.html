@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pretest1.css">
+    <script src="js/Pretest1_register_v2.js"></script>
+
+    <title>Register</title>
+</head>
+
+<body class="main">
+    <div id="header">
+        <h1>Online Shopee</h1>
+    </div>
+    <nav id="menu">
+        <hr class="s1">
+        <a href="/pretest1_home.html">HOME</a>
+        <a href="#" target="_blank">PRODUCTS</a>
+        <a href="#" target="_blank">SHOPS</a>
+        <a href="/pretest_1_register.html" target="_blank">REGISTER</a>
+        <a href="" target="_blank">SIGNIN</a>
+        <hr class="s1">
+    </nav>
+
+    <section class="formlogin">
+        <div id="member">
+            <h2>Member Information</h2>
+        </div>
+        <form action="" method="POST" name="register" onsubmit="return get()">
+            <table id="table1">
+                <tr>
+                    <td class="cell1">Full name </td>
+                    <td class="cell2"><input type="text" name="txtUser" id="txtUser" value="Allan"
+                            placeholder="example:khoi" required></td>
+                </tr>
+                <tr>
+                    <td class="cell1">Gender </td>
+                    <td class="cell2-1">
+                        <input type="radio" name="rdGender" value="Male" id="rdMale" checked class="gend">Male
+                        <input type="radio" name="rdGender" value="Female" id="rdFemale" class="gend">Female
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cell1">Hobbies </td>
+                    <td class="cell2-1">
+                        <input type="checkbox" name="hobby" value="Shopping" id="ckShop" checked>Shopping
+                        <input type="checkbox" name="hobby" value="Eating out" id="ckEat">Eating out
+                        <input type="checkbox" name="hobby" value="Sporting" id="ckSport">Sporting
+                </tr>
+                <tr>
+                    <td class="cell1">Date of Birth</td>
+                    <td class="cell2"><input type="date" name="txtDob" id="txtDob" value="2002-02-15"></td>
+                </tr>
+                <tr>
+                    <td class="cell1">Address </td>
+                    <td class="cell2"><input type="address" name="txtAddress" id="txtAddress" value="124 Haminton"
+                            required></td>
+                </tr>
+                <tr>
+                    <td class="cell1">Email </td>
+                    <td class="cell2"><input type="email" name="txtMail" id="txtMail" value="khoi@gmail.com"
+                            placeholder="example : abc@yahoo.com" required></td>
+                </tr>
+
+                <tr>
+                    <td class="cell1">Phone number </td>
+                    <td class="cell2"><input type="tel" name="Phone" id="Phone" value="01213456" pattern="[0-9]{6,10}"
+                            required></td>
+                </tr>
+                <tr>
+                    <td class="cell1">City </td>
+                    <td class="cell2"><select name="cbCity" id="City" required>
+                            <option value="" id="id1">---Select---</option>
+                            <option value="SaiGon">SaiGon</option>
+                            <option value="HaNoi" selected>Hanoi</option>
+                            <option value="Hue">Hue</option>
+                            <option value="DaNang">Danang</option>
+                        </select></td>
+                </tr>
+
+                <tr>
+                    <td class="cell1">Comment </td>
+                    <td class="cell2"><textarea name="txtcom" id="txtcom" cols="1" rows="1" value="">abc</textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit" id="submit">
+                        <input type="reset" value="Reset" id="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+    <div id="errorText"></div>
+
+
+</body>
+
+</html>
