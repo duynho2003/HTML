@@ -1,0 +1,22 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.error {
+color: #FF0000;
+}
+h1{
+    color: blue;
+    text-align: center;
+}
+h2{
+    color: blue;
+}
+label{
+    display: inline-block;
+    width: 150px;
+}
+.signup-box{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
