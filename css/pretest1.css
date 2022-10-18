@@ -3,9 +3,8 @@
 }
 #header{
 background-color: green;
-padding: 10px;
+padding: 1px;
 background-repeat: no-repeat;
-height: 100px;
 text-shadow: 2px 2px gray;
 color: white;
 }
@@ -24,6 +23,7 @@ width: 50%;
 }
 #menu{
     text-align: center;
+    justify-content: space-between;
 }
 #menu a{
     padding: 10px;
@@ -42,15 +42,14 @@ width: 50%;
     border-radius: 20px;
 }
 .formlogin{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: table;
-    border-style:double;
-    text-indent: initial;
+    border-style: double;
+    vertical-align: middle;
+    margin: auto;
 }
-
 #member{
     background-color: green;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 50px;
     text-shadow: 2px 2px gray;
@@ -70,13 +69,10 @@ input:required:valid{
 }
 textarea{
     padding: 10px;
-    max-width: 100%;
     line-height: 1.5;
-    border-radius: 5px;
-    border: 1px solid #ccc;
     width:300px;
     max-width: 300px;
-    max-height: 20px;
+    max-height: 300px;
 }
 hr.s1 {
     border-top:  solid black;
