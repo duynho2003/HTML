@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/pretest2_signup.css">
+    <script src=""></script>
     <title>REGISTRATION FORM PRETEST2</title>
 </head>
 <body>
     
-    <form action="pretest2_homepage.html">
+    <form action="pretest2_homepage.html" onsubmit="return fn_login()">
     <h1>REGISTRATION FORM </h1>
     <h2>Notes:</h2>
     <ol>
@@ -20,18 +21,18 @@
     <div>
         <label for="">Login name<span class="error">*</span></label>
 
-        <input type="text" name="user" id="user" required value="aptech" />
+        <input type="text" name="user" id="user" required>
     </div>
 
     <div>
         <label for="">Password<span class="error">*</span> </label>
-        <input type="password" name="pass" id="pass" required value="123">
+        <input type="password" name="pass" id="pass" required>
     </div>
 
     <div>
         <label for="">Password Confirm<span class="error">*</span> </label>
         
-        <input type="password" name="pass2" id="pass2" required value="123">
+        <input type="password" name="pass2" id="pass2" required>
     </div>
 
     <div>
@@ -43,7 +44,7 @@
     <div>
         <label for="">Address<span class="error">*</span> </label>
         
-        <input type="text" name="address" id="address" required>
+        <input type="address" name="txtAddress" id="txtAddress" required>
     </div>
 
     <div>
@@ -78,7 +79,7 @@
 
     <div>
         <label for="">Phone number</label>
-        <input type="text" name="pn" id="pn">
+        <input type="tel" name="phone" id="phone">
     </div>
     
     <div>
