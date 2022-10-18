@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pretest2_signup.css">
+    <title>REGISTRATION FORM PRETEST2</title>
+</head>
+<body>
+    
+    <form action="pretest2_homepage.html">
+    <h1>REGISTRATION FORM </h1>
+    <h2>Notes:</h2>
+    <ol>
+        <li>Fields with (<span class="error">*</span>)mark must be entered</li>
+        <li>Login name have no spaces</li>
+    </ol>
+    <div class="signup-box">
+    <div>
+        <label for="">Login name<span class="error">*</span></label>
+
+        <input type="text" name="user" id="user" required value="aptech" />
+    </div>
+
+    <div>
+        <label for="">Password<span class="error">*</span> </label>
+        <input type="password" name="pass" id="pass" required value="123">
+    </div>
+
+    <div>
+        <label for="">Password Confirm<span class="error">*</span> </label>
+        
+        <input type="password" name="pass2" id="pass2" required value="123">
+    </div>
+
+    <div>
+        <label for="">Full name<span class="error">*</span> </label>
+        
+        <input type="text" name="user2" id="user2" required>
+    </div>
+
+    <div>
+        <label for="">Address<span class="error">*</span> </label>
+        
+        <input type="text" name="address" id="address" required>
+    </div>
+
+    <div>
+        <label for="">Email<span class="error">*</span> </label>
+        
+        <input type="email" name="email" id="email" required>
+    </div>
+
+    <div>
+        <label for="">Sex</label>
+        <input type="radio" name="gender" id="gen_male" value="male" checked> Male 
+        <input type="radio" name="gender" id="gen_female" value="female"> Female 
+    </div>
+
+    <div>
+        <label for="">Date of birth </label>
+        <input type="date" name="dob" id="dob"
+        value="1989-01-01">
+    </div>
+
+    <div>
+        <label for="">Country</label>
+        <select name="country" id="country" required>
+            <option value=""> ---- Select a city --- </option>
+            <option value="HCMC" selected>Ho Chi Minh City</option>
+            <option value="HN">Ha noi</option>
+            <option value="DN">Da nang</option>
+            <option value="HU">Hue</option>
+            <option value="CT">Can tho</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="">Phone number</label>
+        <input type="text" name="pn" id="pn">
+    </div>
+    
+    <div>
+        <label for="">Hobbies</label>
+        <input type="checkbox" name="hobbies_swimming" id="hobbies_swimming" value="Swimming"> Swimming
+        <input type="checkbox" name="hobbies_dancing" id="hobbies_dancing" value="Dancing"> Dancing
+        <input type="checkbox" name="hobbies_shopping" id="hobbies_shopping" value="Shopping"> Shopping
+    </div>
+    
+    <div>
+        <label for="" style="vertical-align:top;">Comment</label>
+        <textarea name="note" id="note" rows="3"></textarea>
+    </div>
+
+    <div style="text-align: center;">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+</div>
+</form>
+</body>
+</html>
