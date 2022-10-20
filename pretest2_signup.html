@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/pretest2_signup.css">
-    <script src=""></script>
+    <script src="js/pretest2_register.js"></script>
     <title>REGISTRATION FORM PRETEST2</title>
 </head>
 <body>
     
-    <form action="pretest2_homepage.html" onsubmit="return fn_login()">
+    <form action="" method="POST" name="register" onsubmit="return get()">
     <h1>REGISTRATION FORM </h1>
     <h2>Notes:</h2>
     <ol>
@@ -55,8 +55,8 @@
 
     <div>
         <label for="">Sex</label>
-        <input type="radio" name="gender" id="gen_male" value="male" checked> Male 
-        <input type="radio" name="gender" id="gen_female" value="female"> Female 
+        <input type="radio" name="rdGender" value="Male" id="rdMale" checked class="gend">Male
+        <input type="radio" name="rdGender" value="Female" id="rdFemale" class="gend">Female
     </div>
 
     <div>
@@ -67,7 +67,7 @@
 
     <div>
         <label for="">Country</label>
-        <select name="country" id="country" required>
+        <select name="cbCountry" id="Country" required>
             <option value=""> ---- Select a city --- </option>
             <option value="HCMC" selected>Ho Chi Minh City</option>
             <option value="HN">Ha noi</option>
@@ -84,14 +84,14 @@
     
     <div>
         <label for="">Hobbies</label>
-        <input type="checkbox" name="hobbies_swimming" id="hobbies_swimming" value="Swimming"> Swimming
-        <input type="checkbox" name="hobbies_dancing" id="hobbies_dancing" value="Dancing"> Dancing
-        <input type="checkbox" name="hobbies_shopping" id="hobbies_shopping" value="Shopping"> Shopping
+        <input type="checkbox" name="hobby" id="hobbies_swimming" value="Swimming"> Swimming
+        <input type="checkbox" name="hobby" id="hobbies_dancing" value="Dancing"> Dancing
+        <input type="checkbox" name="hobby" id="hobbies_shopping" value="Shopping"> Shopping
     </div>
     
     <div>
-        <label for="" style="vertical-align:top;">Comment</label>
-        <textarea name="note" id="note" rows="3"></textarea>
+        <label for="" style="vertical-align:bottom;">Comment</label>
+        <textarea name="note" id="note"></textarea>
     </div>
 
     <div style="text-align: center;">
