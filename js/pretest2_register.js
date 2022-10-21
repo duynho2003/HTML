@@ -1,6 +1,6 @@
 function loginname() {// lấy giá trị thẻ loginname
     var loginame = document.getElementById("user").value;
-    var name = /^[A-Za-z ]{3,20}$/;
+    var name = /^[A-Za-z ]{5,20}$/;
     var n = "Login Name: " + loginame;
 
     if (name.test(loginame)) {
