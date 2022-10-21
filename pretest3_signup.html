@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNGW Sign Up</title>
+    <script src="js/pretest3_register.js"></script>
+    <link rel="stylesheet" href="css/pretest3_signup.css">
+</head>
+<body>
+    <div>
+        <!-- onsubmit="return fn_login()" -->
+        <form action="" method="POST" name="register" onsubmit="return get()">
+            <h2>Student Information</h2>
+            <hr>
+            <div>
+
+                <label for="">Name</label>
+                <input type="text" name="user" id="user" placeholder="as" pattern="[A-Za-z ]{6,30}">
+            </div>
+
+            <div>
+                <label for="">Gender</label>
+                <input type="radio" name="gender" id="gen_male" value="Male" checked class="gend"> Male
+                <input type="radio" name="gender" id="gen_female" value="Female" class="gend"> Female
+            </div>
+
+            <div>
+                <label for="">Address</label>
+                <input type="text" name="txtAddress" id="txtAddress" placeholder="sdada">
+            </div>
+
+            <div>
+                <label for="">Email</label>
+                <input type="email" name="email" id="email" placeholder="sa@yahoo.com">
+            </div>
+
+            <div>
+                <label for="">Phone</label>
+                <input type="tel" name="phone" id="phone" placeholder="xxx-xxxxx[xxx]" pattern="[0-9]{3}-[0-9]{5}[0-9]{2}" maxlength="12" title="Ten digits code">
+            </div>
+
+            <div>
+                <label for="">Qualification</label>
+                <select name="cbqualification" id="qualification" required>
+                    <option value="Bachelor degree">Bachelor degree</option>
+                    <option value="Master">Master</option>
+                    <option value="Phd">Phd</option>
+                    <option value="None">None</option>
+                </select>
+            </div>
+
+            <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
