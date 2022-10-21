@@ -7,8 +7,6 @@ padding: 1px;
 background-repeat: no-repeat;
 text-shadow: 2px 2px gray;
 color: white;
-}
-#header h1{
 text-align: center;
 }
 footer{
@@ -26,13 +24,29 @@ width: 50%;
     justify-content: space-between;
 }
 #menu a{
-    padding: 10px;
+    padding: 30px;
     color: #2817A9;
     font-weight: bold;
     text-decoration: none;
-    display: inline-block;
     text-shadow: 1px 1px gray;
 }
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    vertical-align: middle;
+    padding-top: 10px;
+}
+nav{
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    height: 40px;
+}
+/* register */
 #submit, #reset{
     display: inline-block;
     width: 80px;
@@ -73,7 +87,4 @@ textarea{
     width:300px;
     max-width: 300px;
     max-height: 300px;
-}
-hr.s1 {
-    border-top:  solid black;
 }
