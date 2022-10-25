@@ -1,0 +1,56 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+#menu a {
+    font-size: small;
+    padding: 50px;
+    color: #2871C8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    vertical-align:middle;
+    padding-top: 10px;
+}
+
+nav {
+    border-bottom: 3px solid #6D2921;
+    border-top: 3px solid #6D2921;
+    height: 50px;
+}
+
+#menu a.active {
+    font-size: x-large;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #850300;
+    font-style: italic;
+    text-align: center;
+}
+
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px;
+}
+table{
+    margin-top: 1rem !important;
+    width: 60vw !important;
+    margin: auto;
+}
