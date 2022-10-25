@@ -202,7 +202,7 @@
                 // const re = new RegExp("^[a-z ]{3,10}$","ig");
                 // console.log(re.test(sname));
 
-                if (re.test(sname)== false) {
+                if (re.test(sname) == false) {
                     alert("ten ko hop le, vui long nhap lai !");
                     $("#name").focus();
                     return;
@@ -214,17 +214,17 @@
                 let address = $("#address").val().trim();
                 a.push(`address: ${address}`);
 
-                if(address.length==0){
+                if (address.length == 0) {
                     alert("dia chi ko hop le, vui long nhap lai !");
                     $("#address").focus();
-                    return;                   
+                    return;
                 }
 
                 let email = $("#email").val().trim();
                 a.push(`email: ${email}`);
 
                 re = /^[a-z0-9_.+-]+@([a-z0-9-]+\.){1,2}[a-z0-9]{2,3}$/ig;
-                if (re.test(email)== false) {
+                if (re.test(email) == false) {
                     alert("email ko hop le, vui long nhap lai !");
                     $("#email").focus();
                     return;
@@ -234,7 +234,7 @@
                 a.push(`phone: ${phone}`);
 
                 re = /^\d{3}[-]\d{5,8}$/;
-                if (re.test(phone)== false) {
+                if (re.test(phone) == false) {
                     alert("phone ko hop le, vui long nhap lai !");
                     $("#phone").focus();
                     return;
@@ -249,7 +249,7 @@
 
                 let new_win = window.open();
                 new_win.document.write("<h2>Student Information Successful Registration</h2>");
-                
+
                 new_win.document.write(a.join("<br>"));
 
                 let s = `<p><a href="pretest3_signup.html">Click here to return to Student Page</a></p>`;
