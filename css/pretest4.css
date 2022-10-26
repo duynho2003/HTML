@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 20px;
+    border: thick solid gainsboro;
+    box-shadow: 3px 3px 3px grey;
+}
+
+header img {
+    display: block;
+    float: left;
+}
+
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: gainsboro;
+    text-shadow: 2px 2px 2px black;
+}
+
+#menu {
+    text-align: left;
+    justify-content: space-between;
+}
+
+#menu a {
+    font-family: "Courier New", Courier, monospace;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    text-shadow: 1px 1px gray;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+}
+
+li {
+    vertical-align: bottom;
+    padding-top: 10px;
+}
+
+br {
+    color: black;
+}
+
+footer {
+    text-align: center;
+}
+
+.main {
+    display: block;
+    max-width: 50rem;
+    margin: left;
+    padding: 1rem;
+}
+
+h1 {
+    color: red;
+    text-shadow: 1px 1px 1px black;
+}
+
+input:required {
+    border: none;
+    border-bottom: solid blue;
+}
+.required:after {
+    content:" *";
+    color: red;
+    position: right;
+}
+div{
+    margin-top: 10px;
+}
+label{
+    display: inline;
+    width: 100px;
+}
+textarea
+{
+    width:300px;
+    max-width: 300px;
+    max-height: 50px;
+}
+button, input[type=button]{
+    padding: 5px 30px;
+    color: antiquewhite;
+    border: solid thin wheat;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px gray;
+    background-color: blue;
+}
