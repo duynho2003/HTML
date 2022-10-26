@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="css/pretest4.css">
+
+    <!-- JavaScript JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="">
+        <h1>Amazing Bridges</h1>
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><a href="/pretest4_home.html">HOME</a></li>
+            <li><a href="#" target="_blank">WORLD BRIDES</a></li>
+            <li><a href="#" target="_blank">TOP LONGEST</a></li>
+            <li><a href="#" target="_blank">TOP HIGHEST</a></li>
+            <li><a href="/pretest4_contact.html">CONTACT</a></li>
+        </ul>
+        <hr color="black" size="1px" />
+        <section>
+            <!-- forms signup -->
+            <form action="" id="form-signup">
+                <h1>Contact Us</h1>
+                <h2>Your Detalis:</h2>
+
+                <div>
+                    <label class="required" for="">Name</label>
+                    <input type="text" name="user" id="user" required>
+                </div>
+
+                <div>
+                    <label class="required" for="">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <h2>Your Review:</h2>
+                <div>
+                    <label for="">How did you hear about us?</label>
+                    <select id="selectop">
+                        <option selected value="Google">Google</option>
+                        <option value="Friend">Friend</option>
+                        <option value="Advert">Advert</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="">Would you visit again?</label>
+                    <input type="radio" name="answer" value="Yes">Yes
+                    <input type="radio" name="answer" value="No">No
+                    <input type="radio" name="answer" value="Maybe">Maybe
+                </div>
+
+                <div>
+                    <label for="" style="vertical-align:top;">Comments:</label>
+                    <textarea name="note" id="note" rows="3"></textarea>
+                </div>
+
+                <div>
+                    <input type="checkbox" value="sign-up" id="rememberMe" checked>
+                    <label for="rememberMe">Sign me up for email updates</label>
+                </div>
+
+                <div>
+                    <button type="submit" value="Submit">Submit review</button>
+
+                    <button type="reset" value="Reset">Reset</button>
+                </div>
+
+            </form>
+        </section>
+    </nav>
+    <footer>
+        Copyright &copy; by ABC Team - April, 2020
+    </footer>
+
+    <script>
+        $(function () {
+            $("#form-signup").submit(function (e) {
+                e.preventDefault()
+
+                //lay du lieu nhap trong cac o nhap lieu
+                let a = [];
+
+                let sname = $("#user").val() + "";
+                a.push(`Name: ${sname}`);
+
+                let re = /^[a-z ]{3,20}$/ig;
+
+                if (re.test(sname) == false) {
+                    alert("Ten ko hop le, vui long nhap lai !");
+                    $("#name").focus();
+                    return;
+                }
+
+                let email = $("#email").val().trim();
+                a.push(`Email: ${email}`);
+
+                re = /^[a-z0-9_.+-]+@([a-z0-9-]+\.){1,2}[a-z0-9]{2,3}$/ig;
+                if (re.test(email) == false) {
+                    alert("Email ko hop le, vui long nhap lai !");
+                    $("#email").focus();
+                    return;
+                }
+
+                let selectop = $("#selectop").val();
+                a.push(`How did you hear about us? ${selectop}`);
+
+                let answer = $("input[name='answer']:checked").val();
+                a.push(`Would you visit again? ${answer}`);
+
+                let note = $("#note").val();
+                a.push(`comments: ${note}`);
+
+                alert(a.join('\n'));
+
+                let new_win = window.open();
+                new_win.document.write("<h2>Thank you</h2>");
+
+                new_win.document.write(a.join("<br>"));
+
+                let s = `<p><a href="pretest4_home.html">Click here to return to Home Page</a></p>`;
+                new_win.document.write(s);
+            });
+        });
+    </script>
+</body>
+
+</html>
