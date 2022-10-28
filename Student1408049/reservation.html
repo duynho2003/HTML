@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .nav-item {
+            width: 12.8vw;
+            text-align: center;
+
+        }
+
+        .nav-link {
+            color: blue !important;
+
+        }
+
+        .navbar-brand {
+            color: brown !important;
+            font-weight: bold;
+            font-size: 1.5em;
+            font-style: italic;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        table {
+            margin-top: 1rem !important;
+            width: 60vw !important;
+            margin: auto;
+        }
+
+        footer {
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .h3 {
+            text-align: center;
+        }
+
+        #btn {
+            display: inline-block;
+            background-color: #DDDDDB;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header style="text-align:center ;">
+            <img src="Images_Set07/logo4.jpg" alt="logo" style="width: 10rem;">
+        </header>
+
+        <!-- menu -->
+        <nav class="navbar navbar-expand-lg"
+            style="border-top: thin saddlebrown solid !important; border-bottom: thin saddlebrown solid !important;">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#">My-Web</a> -->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservation.html">RESERVATION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="#">BonBon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">EVENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <section>
+            <!-- form signup -->
+            <form action="" id="form-signup">
+                <div class="row">
+                    <div class="offset-md-3 col-md-6">
+
+                        <form action="" id="form-signup">
+                            <p class="h3">Online Booking</p>
+                            <hr>
+
+                            <div class="mb-3 row">
+                                <label class="col-sm-3 col-form-label">Full Name</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="fullname" value="aptech" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label class="col-sm-3 col-form-label">Email</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="email" placeholder="xxxx@xxx.com"
+                                        value="aptech@example.com" required>
+                                </div>
+                            </div>
+
+
+                            <div class="mb-3 row">
+                                <label class="col-sm-3 col-form-label">Phone Number</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="phone" placeholder="xx-xxx-xxxxxxx"
+                                        value="123-12345" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label class="col-sm-3 col-form-label">No. of Persons:</label>
+                                <div class="col-sm-9">
+                                    <select class="form-select" aria-label="Default select example" id="qua">
+                                        <option value="1 person">1 person</option>
+                                        <option selected value="2 persons"> 2 persons</option>
+                                        <option value="3 persons"> 3 persons</option>
+                                        <option value="4 persons"> 4 persons</option>
+                                        <option value="5 persons"> 5 persons</option>
+                                        <option value="More ..."> More ...</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="col-sm-3 col-form-label">Set Date</label>
+                                <input type="date" name="date" id="date" required>
+                            </div>
+
+                            <div>
+                                <label class="col-sm-3 col-form-label">Time Set</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+
+                            <div>
+                                <label for="" style="vertical-align:top;">Comments:</label>
+                                <textarea name="note" id="note" rows="3"></textarea>
+                            </div>
+
+                            <div style="text-align: center">
+                                <input type="submit" value="RESERVE A TABLE" id="btn">
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+
+        </section>
+
+        <footer>
+            2018 BonBon, All rights reserved.
+        </footer>
+
+        <script>
+            $(function () {
+                $("#form-signup").submit(function (e) {
+                    e.preventDefault();
+
+                    //lay du lieu nhap trong cac o nhap lieu
+                    let a = [];
+
+                    let fname = $("#fullname").val() + "";
+                    a.push(`Name: ${fname}`);
+
+                    let re = /^[a-z ]{6,20}$/ig;
+
+                    if (re.test(fname) == false) {
+                        alert("Ten ko hop le, vui long nhap lai !");
+                        $("#fullname").focus();
+                        return;
+                    }
+
+                    let email = $("#email").val().trim();
+                    a.push(`Email: ${email}`);
+
+                    re = /^[a-z0-9_.+-]+@([a-z0-9-]+\.){1,2}[a-z0-9]{2,3}$/ig;
+                    if (re.test(email) == false) {
+                        alert("Email ko hop le, vui long nhap lai !");
+                        $("#email").focus();
+                        return;
+                    }
+
+                    let phone = $("#phone").val().trim();
+                    a.push(`phone: ${phone}`);
+
+                    re = /^\d{3}[-]\d{5,8}$/;
+                    if (re.test(phone) == false) {
+                        alert("phone ko hop le, vui long nhap lai !");
+                        $("#phone").focus();
+                        return;
+                    }
+
+                    let qua = $("#qua").val()
+                    a.push(`Persons: ${qua}`);
+
+                    let date = $("#date").val();
+                    a.push(`Date: ${date}`);
+
+                    let time = $("#time").val();
+                    a.push(`Time: ${time}`);
+
+                    let note = $("#note").val();
+                    a.push(`Comments: ${note}`);
+
+                    alert(a.join('\n'));
+
+                    let new_win = window.open();
+                    new_win.document.write("<h2>Thank you</h2>");
+
+                    new_win.document.write(a.join("<br>"));
+
+                    let s = `<p><a href="home.html">Click here to return to the home Page</a></p>`;
+                    new_win.document.write(s);
+                })
+            })
+        </script>
+    </div>
+</body>
+
+</html>
